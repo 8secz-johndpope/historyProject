@@ -1,0 +1,38 @@
+{
+    "tb":"person",
+    "its":[{
+           "vs":1,
+           "cl":[
+                 {"name":"CouponId",  "type":"int64",   "level":"Primary"},
+                 {"name":"CategoryCode", "type":"text", "index":"Index"},
+                 {"name":"ParentCategoryId",  "type":"int64"},
+                 
+                 {"name":"CouponName", "type":"text"},
+                 {"name":"CouponReference", "type":"text"},
+                 
+                 {"name":"CouponAmount", "type":"double"},
+                 {"name":"MinimumSpendAmount", "type":"double"},
+                 
+                 {"name":"MaximumUserRedemptionsCount",  "type":"int"},
+                 {"name":"CurrentUserRedemptionsCount",  "type":"int"},
+                 {"name":"CurrentUserPaidCount",  "type":"int"},
+                 
+                 {"name":"StatusId",  "type":"int"},
+                 
+                 {"name":"IsClaimed",  "type":"bool"},
+                 
+                 {"name":"IsSegmented",  "type":"bool"},
+                 {"name":"IsPending",  "type":"bool"},
+                 
+                 {"name":"MerchantId",  "type":"int64",   "index":"Index"},
+                 {"name":"SegmentMerchantId",  "type":"int64"},
+                 {"name":"SegmentBrandId",  "type":"int64"},
+                 {"name":"SegmentCategoryId",  "type":"int64"},
+                 
+                 {"name":"AvailableFrom",  "type":"int64"},
+                 {"name":"AvailableTo",  "type":"int64"},
+                 {"name":"LastCreated",  "type":"int64"}
+                 
+                 ]
+           }]
+}

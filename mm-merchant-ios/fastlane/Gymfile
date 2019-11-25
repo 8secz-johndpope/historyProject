@@ -1,0 +1,31 @@
+# For more information about this configuration visit
+# https://github.com/fastlane/fastlane/tree/master/gym#gymfile
+
+# In general, you can use the options available
+# gym --help
+
+# Remove the # in front of the line to enable the option
+
+scheme "storefront-ios"
+
+sdk "iphoneos10.0"
+
+output_directory "./"
+
+# configuration "Debug"
+
+# codesigning_identity "iPhone Distribution: WWE Group Limited (WLS4TQMLYZ)"
+
+use_legacy_build_api "true"
+
+# skip_build_archive "true"
+
+# archive_path "./tmp.xcarchive"
+
+# clean "true"
+
+# export_method "enterprise"
+
+# silent "true"
+
+toolchain "swift_2_3"

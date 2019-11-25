@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eby-LX-mUE" customClass="TSChatListPredefinedMessageCollectionViewCell" customModule="storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtQ-dY-HxL">
+                        <rect key="frame" x="10" y="15" width="300" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGg-jg-ycU">
+                        <rect key="frame" x="10" y="43" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="FW0-EY-dM8"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GqF-dB-DEH">
+                        <rect key="frame" x="276" y="5" width="34" height="34"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="6kS-Vb-Cid"/>
+                            <constraint firstAttribute="height" constant="34" id="Hxb-G1-QUA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GqF-dB-DEH" firstAttribute="centerY" secondItem="eby-LX-mUE" secondAttribute="centerY" id="AnI-gO-bCt"/>
+                <constraint firstItem="gtQ-dY-HxL" firstAttribute="leading" secondItem="eby-LX-mUE" secondAttribute="leading" constant="10" id="Ed2-64-fUg"/>
+                <constraint firstAttribute="bottom" secondItem="gtQ-dY-HxL" secondAttribute="bottom" constant="15" id="IX3-1y-0ai"/>
+                <constraint firstAttribute="trailing" secondItem="GqF-dB-DEH" secondAttribute="trailing" constant="10" id="K16-vt-hnn"/>
+                <constraint firstItem="gtQ-dY-HxL" firstAttribute="top" secondItem="eby-LX-mUE" secondAttribute="top" constant="15" id="Kou-cL-3wu"/>
+                <constraint firstItem="QGg-jg-ycU" firstAttribute="leading" secondItem="eby-LX-mUE" secondAttribute="leading" constant="10" id="Pqu-qE-MeJ"/>
+                <constraint firstAttribute="trailing" secondItem="gtQ-dY-HxL" secondAttribute="trailing" priority="999" constant="10" id="TfT-wy-Abh"/>
+                <constraint firstAttribute="bottom" secondItem="QGg-jg-ycU" secondAttribute="bottom" id="cpq-EN-WmB"/>
+                <constraint firstAttribute="trailing" secondItem="QGg-jg-ycU" secondAttribute="trailing" constant="10" id="yyl-O9-Otr"/>
+            </constraints>
+            <size key="customSize" width="320" height="78"/>
+            <connections>
+                <outlet property="imageView" destination="GqF-dB-DEH" id="Zts-S2-WRc"/>
+                <outlet property="messageLabel" destination="gtQ-dY-HxL" id="EoT-Tf-RJg"/>
+                <outlet property="separatorView" destination="QGg-jg-ycU" id="rvE-KE-EGu"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="307"/>
+        </collectionViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+}
+.myMM{,
+font-size: 14px;
+    color: #4a4a4a;
+    line-height: 24px;
+ }
+.myMM .title {
+    color: #4a4a4a;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10%;
+    margin-top: 25%;
+    text-align: center;
+}
+.text-center{
+    text-align: center;
+}
+
+.bg1{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top:0
+}
+
+.myMM .info{
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height:1.8;
+}
+.pic-img {
+    border-radius: 5px;
+    margin: 2rem;
+    overflow: hidden;
+}
+.pic-img img{
+    width: 100%;
+}
+.r_btn{
+    background: #ed2247 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    line-height: 38px;
+    margin: 0 auto;
+    text-align: center;
+    width: 219px;
+}
+.arrow_down img{
+    width: 100%;
+}
+
+.title_s {
+
+    margin: 0 auto;
+    text-align: center;
+    width: 65%;
+    position: relative;
+}
+
+.title_s span {
+    background-color: #fff;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 1rem;
+}
+
+.title_s::before {
+    border-bottom: 1px solid #4a4a4a;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+}
+.myMMList{
+    margin-left: 15px;
+}
+.myMMList li{
+    margin-top: 14px;
+    line-height: 1.8;
+}
+.p_line {
+    margin: 24px 15px 0;
+    padding-left: 28px;
+}
+.p_line .num {
+    background-color: #ed2247;
+    border-radius: 1000px;
+    color: #fff;
+    display: block;
+    font-style: normal;
+    height: 20px;
+    left: 15px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    width: 20px;
+}
+
+.fooder{
+    color: #9b9b9b;
+    margin: 40px 24px 20px;
+    font-size: 12px; 
+}
+.close_btn {
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    width: 24px;
+    z-index: 10;
+}
+.pr{
+    position: relative;
+}
+
+.close_btn img {
+    width: 80%;
+}
+.p_line_p{
+    margin-top: 14px;
+}

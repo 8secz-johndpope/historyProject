@@ -1,0 +1,19 @@
+/* 
+  InfoPlist.strings
+  merchant-ios
+
+  Created by Alan YU on 7/10/2016.
+  Copyright © 2016 WWE & CO. All rights reserved.
+*/
+
+NSPhotoLibraryUsageDescription = "您上傳的照片將顯示在您的個人首頁、帖文或聊天訊息中";
+
+NSMicrophoneUsageDescription = "您的麥克風將會用作為錄製語音訊息，並可以在聊天對話中發送";
+
+NSCameraUsageDescription = "您的相機將用於拍照上傳到您的個人首頁、帖文或聊天訊息中";
+
+NSLocationUsageDescription = "您的位置資訊將協助我們為您找尋附近的商店";
+
+NSLocationAlwaysUsageDescription = "您的位置資訊將協助我們為您找尋附近的商店";
+
+NSLocationWhenInUseUsageDescription = "您的位置資訊將協助我們為您找尋附近的商店";

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MerchantGridCell" id="Bhv-OY-dUA" customClass="MerchantGridCell" customModule="storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4re-AP-xjV">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4re-AP-xjV" secondAttribute="bottom" id="VhP-r1-eqt"/>
+                <constraint firstItem="4re-AP-xjV" firstAttribute="leading" secondItem="Bhv-OY-dUA" secondAttribute="leading" id="ZWY-5w-5yM"/>
+                <constraint firstAttribute="trailing" secondItem="4re-AP-xjV" secondAttribute="trailing" id="g1z-oJ-XPa"/>
+                <constraint firstItem="4re-AP-xjV" firstAttribute="top" secondItem="Bhv-OY-dUA" secondAttribute="top" id="kNe-aI-5vu"/>
+            </constraints>
+            <size key="customSize" width="212" height="182"/>
+            <connections>
+                <outlet property="imageView" destination="4re-AP-xjV" id="1tC-1t-KvW"/>
+            </connections>
+            <point key="canvasLocation" x="-184" y="-16"/>
+        </collectionViewCell>
+    </objects>
+</document>

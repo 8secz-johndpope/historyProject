@@ -1,0 +1,74 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+inhibit_all_warnings!
+
+pod 'Alamofire',                :git => 'https://github.com/lingminjun/Alamofire.git' # '4.7.2'
+
+# 解码 Mapper将废弃
+pod 'ObjectMapper'
+pod 'HandyJSON'
+
+pod 'QRCode',                   '2.0'
+pod 'RealmSwift'
+pod 'PromiseKit',               '4.5.0'
+pod 'SwiftDate',                '4.5.0'
+pod 'XCGLogger'
+pod 'SwiftWebSocket'
+pod 'Cosmos',                   '13.0.0' #rating star
+pod 'Refresher',                '0.7.0'
+pod 'Kingfisher',               :git => 'https://github.com/lingminjun/Kingfisher.git' # '4.8.0'
+#pod 'Dollar',                   '7.0.0'
+#pod 'Cent',                     '6.0.4'
+pod 'SnapKit',                  '4.0.0'
+pod 'SKPhotoBrowser',			'5.0.8'
+
+# Objective-C
+pod 'MBProgressHUD',            '0.9.2'
+pod 'YYText',                   '1.0.2'
+pod 'NMRangeSlider',            '1.2.1'
+pod 'GZIP',                     '1.1.1'
+
+#pod 'OpenSSL',                  '1.0.206'
+pod 'OpenSSL-Universal',        '~> 1.0'
+
+pod 'JPSVolumeButtonHandler',   '1.0.0'
+pod 'CSStickyHeaderFlowLayout', '0.2.10'
+pod 'UIAlertController+Blocks', '0.9'
+pod 'MJRefresh',                '3.1.15'
+# Lib
+pod 'JPush',                    '3.0.8'
+pod 'WeiboSDK', :git => 'https://github.com/sinaweibosdk/weibo_ios_sdk.git', :commit => 'cc559ec82e8e89f955e7ecbd60a7565f8b992d86'
+pod 'Fabric',                   '1.6.11'
+pod 'Crashlytics',              '3.6.0'
+pod 'MagicWindowSDK',           '3.90.170116'
+pod 'GrowingIO',                '~>2.3.3'
+
+# tab page control
+pod 'XLPagerTabStrip',           '8.0.0'
+
+target 'storefront-ios' do
+
+end
+
+target 'storefrontTests' do
+
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if ['SwiftWebSocket'].include? target.name
+            target.build_configurations.each do |config|
+#                config.build_settings['SWIFT_VERSION'] = '3.2'
+            end
+        end
+        target.build_configurations.each do |config|
+            config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
+            config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+            config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+            config.build_settings['ENABLE_BITCODE'] = "NO"
+            config.build_settings['ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES'] = "NO"
+        end
+    end
+end
+

@@ -1,0 +1,37 @@
+{
+    "tb":"brand",
+    "its":[{
+           "vs":1,
+           "cl":[
+                 {"name":"BrandId",  "type":"int64",   "level":"Primary"},
+                 {"name":"BrandCode", "type":"text", "index":"Index"},
+                 {"name":"BrandSubdomain", "type":"text", "index":"Index"},
+                 
+                 {"name":"BrandName", "type":"text"},
+                 {"name":"BrandNameInvariant", "type":"text"},
+                 {"name":"BrandDesc", "type":"text"},
+                 {"name":"BrandDescInvariant", "type":"text"},
+                 
+                 {"name":"HeaderLogoImage", "type":"text"},
+                 {"name":"SmallLogoImage", "type":"text"},
+                 {"name":"LargeLogoImage", "type":"text"},
+                 
+                 {"name":"ProfileBannerImage", "type":"text"},
+
+                 {"name":"IsFeaturedBrand",  "type":"bool"},
+                 {"name":"IsRecommendedBrand",  "type":"bool"},
+                 {"name":"IsSearchableBrand",  "type":"bool"},
+                 {"name":"IsListedBrand",  "type":"bool"},
+                 {"name":"IsRed",  "type":"bool"},
+                 {"name":"IsBlack",  "type":"bool"},
+                 
+                 {"name":"Priority",  "type":"int"},
+                 {"name":"StatusId",  "type":"int"},
+                 
+                 {"name":"Followed",  "type":"bool"},
+                 
+                 {"name":"LastCreated",  "type":"int64"},
+                 {"name":"LastModified",  "type":"int64"}
+                 ]
+           }]
+}

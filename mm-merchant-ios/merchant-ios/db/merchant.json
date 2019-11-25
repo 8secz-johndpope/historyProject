@@ -1,0 +1,67 @@
+{
+    "tb":"merchant",
+    "its":[{
+           "vs":1,
+           "cl":[
+                 {"name":"MerchantId",  "type":"int64",   "level":"Primary"},
+                 {"name":"MerchantCode", "type":"text", "index":"Index"},
+                 {"name":"MerchantSubdomain", "type":"text", "index":"Index"},
+                 
+                 {"name":"MerchantNameInvariant", "type":"text"},
+                 {"name":"MerchantCompanyName", "type":"text"},
+                 {"name":"BusinessRegistrationNo", "type":"text"},
+                 {"name":"MerchantDescInvariant", "type":"text"},
+                 
+                 {"name":"HeaderLogoImage", "type":"text"},
+                 {"name":"SmallLogoImage", "type":"text"},
+                 {"name":"LargeLogoImage", "type":"text"},
+                 {"name":"ProfileBannerImage", "type":"text"},
+                 {"name":"ChatBackgroundImage", "type":"text"},
+                 
+                 {"name":"IsListedMerchant",  "type":"bool"},
+                 {"name":"IsFeaturedMerchant",  "type":"bool"},
+                 {"name":"IsRecommendedMerchant",  "type":"bool"},
+                 {"name":"IsSearchableMerchant",  "type":"bool"},
+                 {"name":"IsAutoConfirmOrder",  "type":"bool"},
+                 {"name":"IsCrossBorder",  "type":"bool"},
+                 {"name":"IsFeaturedRed",  "type":"bool"},
+                 {"name":"IsFeaturedRedModify",  "type":"bool"},
+                 {"name":"IsFeaturedBlack",  "type":"bool"},
+                 
+                 {"name":"Priority",  "type":"int"},
+                 {"name":"PriorityRed",  "type":"int"},
+                 {"name":"PriorityBlack",  "type":"int"},
+                 
+                 {"name":"GeoCountryId",  "type":"int"},
+                 {"name":"GeoIdProvince",  "type":"int"},
+                 {"name":"GeoIdCity",  "type":"int"},
+                 
+                 {"name":"District", "type":"text"},
+                 {"name":"PostalCode", "type":"text"},
+                 {"name":"Apartment", "type":"text"},
+                 {"name":"Floor", "type":"text"},
+                 {"name":"BlockNo", "type":"text"},
+                 {"name":"Building", "type":"text"},
+                 {"name":"StreetNo", "type":"text"},
+                 {"name":"Street", "type":"text"},
+                 
+                 {"name":"ShippingFee", "type":"double"},
+                 {"name":"DefaultShipFromInventoryLocationId",  "type":"int"},
+                 {"name":"DefaultReturnToInventoryLocationId",  "type":"int"},
+                 {"name":"FreeShippingThreshold",  "type":"int"},
+                 {"name":"FreeShippingFrom",  "type":"int64"},
+                 {"name":"FreeShippingTo",  "type":"int64"},
+                 
+                 {"name":"StatusId",  "type":"int"},
+                 {"name":"LastStatus",  "type":"int64"},
+                 
+                 {"name":"LastStatus",  "type":"int64"},
+                 
+                 {"name":"Followed",  "type":"bool"},
+                 
+                 {"name":"LastCreated",  "type":"int64"},
+                 {"name":"LastModified",  "type":"int64"}
+                 ]
+           }
+           ]
+}

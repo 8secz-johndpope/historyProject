@@ -1,0 +1,184 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Cosmos (13.0.0)
+  - Crashlytics (3.6.0):
+    - Fabric (~> 1.6.3)
+  - CSStickyHeaderFlowLayout (0.2.10)
+  - Fabric (1.6.11)
+  - GrowingIO (2.3.3):
+    - GrowingIO/Core (= 2.3.3)
+  - GrowingIO/Core (2.3.3)
+  - GZIP (1.1.1)
+  - HandyJSON (5.0.1)
+  - JCore (1.1.9)
+  - JPSVolumeButtonHandler (1.0.0)
+  - JPush (3.0.8):
+    - JCore (~> 1.1.7)
+  - Kingfisher (4.8.0)
+  - MagicWindowSDK (3.90.170116):
+    - MagicWindowSDK/WeChat (= 3.90.170116)
+  - MagicWindowSDK/WeChat (3.90.170116)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.15)
+  - NMRangeSlider (1.2.1)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - ObjectMapper (3.5.1)
+  - OpenSSL-Universal (1.0.2.19):
+    - OpenSSL-Universal/Static (= 1.0.2.19)
+  - OpenSSL-Universal/Static (1.0.2.19)
+  - PromiseKit (4.5.0):
+    - PromiseKit/Foundation (= 4.5.0)
+    - PromiseKit/QuartzCore (= 4.5.0)
+    - PromiseKit/UIKit (= 4.5.0)
+  - PromiseKit/CorePromise (4.5.0)
+  - PromiseKit/Foundation (4.5.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.5.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.5.0):
+    - PromiseKit/CorePromise
+  - QRCode (2.0)
+  - Realm (4.1.1):
+    - Realm/Headers (= 4.1.1)
+  - Realm/Headers (4.1.1)
+  - RealmSwift (4.1.1):
+    - Realm (= 4.1.1)
+  - Refresher (0.7.0)
+  - SKPhotoBrowser (5.0.8)
+  - SnapKit (4.0.0)
+  - SwiftDate (4.5.0)
+  - SwiftWebSocket (2.7.0)
+  - "UIAlertController+Blocks (0.9)"
+  - WeiboSDK (3.2.0)
+  - XCGLogger (7.0.0):
+    - XCGLogger/Core (= 7.0.0)
+  - XCGLogger/Core (7.0.0):
+    - ObjcExceptionBridging
+  - XLPagerTabStrip (8.0.0)
+  - YYText (1.0.2)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/lingminjun/Alamofire.git`)
+  - Cosmos (= 13.0.0)
+  - Crashlytics (= 3.6.0)
+  - CSStickyHeaderFlowLayout (= 0.2.10)
+  - Fabric (= 1.6.11)
+  - GrowingIO (~> 2.3.3)
+  - GZIP (= 1.1.1)
+  - HandyJSON
+  - JPSVolumeButtonHandler (= 1.0.0)
+  - JPush (= 3.0.8)
+  - Kingfisher (from `https://github.com/lingminjun/Kingfisher.git`)
+  - MagicWindowSDK (= 3.90.170116)
+  - MBProgressHUD (= 0.9.2)
+  - MJRefresh (= 3.1.15)
+  - NMRangeSlider (= 1.2.1)
+  - ObjectMapper
+  - OpenSSL-Universal (~> 1.0)
+  - PromiseKit (= 4.5.0)
+  - QRCode (= 2.0)
+  - RealmSwift
+  - Refresher (= 0.7.0)
+  - SKPhotoBrowser (= 5.0.8)
+  - SnapKit (= 4.0.0)
+  - SwiftDate (= 4.5.0)
+  - SwiftWebSocket
+  - "UIAlertController+Blocks (= 0.9)"
+  - WeiboSDK (from `https://github.com/sinaweibosdk/weibo_ios_sdk.git`, commit `cc559ec82e8e89f955e7ecbd60a7565f8b992d86`)
+  - XCGLogger
+  - XLPagerTabStrip (= 8.0.0)
+  - YYText (= 1.0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cosmos
+    - Crashlytics
+    - CSStickyHeaderFlowLayout
+    - Fabric
+    - GrowingIO
+    - GZIP
+    - HandyJSON
+    - JCore
+    - JPSVolumeButtonHandler
+    - JPush
+    - MagicWindowSDK
+    - MBProgressHUD
+    - MJRefresh
+    - NMRangeSlider
+    - ObjcExceptionBridging
+    - ObjectMapper
+    - OpenSSL-Universal
+    - PromiseKit
+    - QRCode
+    - Realm
+    - RealmSwift
+    - Refresher
+    - SKPhotoBrowser
+    - SnapKit
+    - SwiftDate
+    - SwiftWebSocket
+    - "UIAlertController+Blocks"
+    - XCGLogger
+    - XLPagerTabStrip
+    - YYText
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/lingminjun/Alamofire.git
+  Kingfisher:
+    :git: https://github.com/lingminjun/Kingfisher.git
+  WeiboSDK:
+    :commit: cc559ec82e8e89f955e7ecbd60a7565f8b992d86
+    :git: https://github.com/sinaweibosdk/weibo_ios_sdk.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 3cd4ef777096ea92fb5a2d419c5f9e4283af823b
+    :git: https://github.com/lingminjun/Alamofire.git
+  Kingfisher:
+    :commit: bc61847380a347bc3b5846bd145746f9fda258a4
+    :git: https://github.com/lingminjun/Kingfisher.git
+  WeiboSDK:
+    :commit: cc559ec82e8e89f955e7ecbd60a7565f8b992d86
+    :git: https://github.com/sinaweibosdk/weibo_ios_sdk.git
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Cosmos: af3973becc045af335b64498c9812034876b7661
+  Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
+  CSStickyHeaderFlowLayout: 5366582779d8b7c9ba9b9cc729c218cc23888776
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  GrowingIO: 0ac60d755bda18abd0d342986be884f43cd30ec7
+  GZIP: f8beb59597f651e6970a45b816508a9c6d700b77
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  JCore: 27598485098d0db99d2812cba048003457d08cfb
+  JPSVolumeButtonHandler: b056ec5c574fbd75a0637c527e25fe0197ec1648
+  JPush: 9574d072cc37e93fa293ba69b43ce763c440943a
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  MagicWindowSDK: 96eef59392c2b488a8139275546103b9566fc5a7
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
+  NMRangeSlider: 317ded652431eb90501c8421d9cddc3930d891e6
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  OpenSSL-Universal: 8b48cc0d10c1b2923617dfe5c178aa9ed2689355
+  PromiseKit: 9c1d9f6d7b65e3951a90bea7f407c56972be5d8e
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
+  Realm: 25f0a8244cbb1c2271c922963ea8666fc2d8104d
+  RealmSwift: 9e2657b33764f80e4a4dffd6d440e24715782052
+  Refresher: a72fdd35f0e1854d787eb5eb6853dd3f6d81c1e5
+  SKPhotoBrowser: d50a4f7374d4d71574dbeb1429ae5c31e778b72e
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftDate: 17dd829c004a2d60432ef63ffcdb26ca2eb97a60
+  SwiftWebSocket: 612c9729fd503cb6b0b8b45390c788686dac306f
+  "UIAlertController+Blocks": b48c673ff60726da468b32ab21bbc7683512d45b
+  WeiboSDK: a678016504873d4c12c35d156eabd232d19b3d3f
+  XCGLogger: 0434f15e3909cdc450bb63faf638b8792ab782ab
+  XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
+  YYText: 9f1b8ce94f4169e40dd6a42182b42dbbd3e54020
+
+PODFILE CHECKSUM: 12c8fb2c47c0510d86a303c422368fb88aa75b1a
+
+COCOAPODS: 1.6.1

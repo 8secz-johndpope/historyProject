@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>应用版权信息</title>
+        <meta name="description" content="应用版权信息">
+        <style>
+            ol, ul {
+                counter-reset: item;
+            }
+            ol li {
+                display: block;
+                position: relative;
+            }
+            ol li:before {
+                content: counters(item, ".")".";
+                counter-increment: item;
+                position: absolute;
+                margin-right: 100%;
+                right: 10px;
+            }
+            
+            ol li ul li::before {
+                content: "•";
+                right: 10px;
+            }
+            h1 {
+                color: #ED2247;
+                font-size: 16px;
+            }
+            body, h2 {
+                line-height: 12px;
+                font-size: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>版权信息</h1>
+        <p>© Copyright 2016，软件版权属于香港WWE有限公司所有</p>
+        
+        <h2>JSON Framework</h2>
+        <p>Copyright (C) 2007-2010 Stig Brautaset. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. Neither the name of the author nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+    </body>
+</html>

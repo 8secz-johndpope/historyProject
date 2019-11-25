@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TSChatActionBarView" customModule="storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="SVs-2J-YXB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ij4-km-ljO" userLabel="Button-add" customClass="TSChatButton" customModule="storefront_ios" customModuleProvider="target">
+                            <rect key="frame" x="271" y="0.0" width="49" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                            <state key="normal" image="btn_add"/>
+                            <state key="selected" image="btn_add_cancel"/>
+                            <state key="highlighted" image="btn_add_cancel"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v7b-H8-Eqa" userLabel="Button-Send" customClass="TSChatButton" customModule="storefront_ios" customModuleProvider="target">
+                            <rect key="frame" x="256" y="8" width="60" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="k2y-pX-PCF" userLabel="Button-Message" customClass="TSChatButton" customModule="storefront_ios" customModuleProvider="target">
+                            <rect key="frame" x="232" y="0.0" width="49" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                            <state key="normal" image="predefine_off"/>
+                            <state key="selected" image="predefine_on"/>
+                            <state key="highlighted" image="predefine_on"/>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" textAlignment="natural" id="6tY-cr-lmr" customClass="MMPlaceholderTextView" customModule="storefront_ios" customModuleProvider="target">
+                            <rect key="frame" x="57" y="7" width="166" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                        </textView>
+                        <view hidden="YES" contentMode="scaleToFill" id="ifS-3f-Q6i">
+                            <rect key="frame" x="49" y="0.0" width="271" height="50"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <subviews>
+                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" id="CT8-JU-96T">
+                                    <rect key="frame" x="0.0" y="24" width="218" height="2"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                </progressView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v06-fU-BDw">
+                                    <rect key="frame" x="219" y="0.0" width="52" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.91372549020000005" green="0.15686274510000001" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mkv-DV-wGh" userLabel="Button-voice" customClass="TSChatButton" customModule="storefront_ios" customModuleProvider="target">
+                            <rect key="frame" x="3" y="2" width="45" height="45"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                            <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" image="btn_voice"/>
+                            <state key="selected" image="btn_voice_on"/>
+                            <state key="highlighted" image="btn_voice_on"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="audioProgressBar" destination="CT8-JU-96T" id="JKA-D8-lta"/>
+                <outlet property="containerView" destination="SVs-2J-YXB" id="JpV-xY-1q4"/>
+                <outlet property="counterLabel" destination="v06-fU-BDw" id="Yjn-O1-DX0"/>
+                <outlet property="inputTextView" destination="6tY-cr-lmr" id="7Cv-uK-XCJ"/>
+                <outlet property="messageButton" destination="k2y-pX-PCF" id="EZ8-pN-OIJ"/>
+                <outlet property="progressBarContainer" destination="ifS-3f-Q6i" id="c6i-qr-P2H"/>
+                <outlet property="recordButton" destination="Mkv-DV-wGh" id="OsT-Eu-pCA"/>
+                <outlet property="sendButton" destination="v7b-H8-Eqa" id="ajb-8C-rhd"/>
+                <outlet property="shareButton" destination="Ij4-km-ljO" id="S2P-ce-B0p"/>
+            </connections>
+            <point key="canvasLocation" x="745" y="835"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_add" width="44" height="44"/>
+        <image name="btn_add_cancel" width="88" height="88"/>
+        <image name="btn_voice" width="44" height="44"/>
+        <image name="btn_voice_on" width="88" height="88"/>
+        <image name="predefine_off" width="44" height="44"/>
+        <image name="predefine_on" width="88" height="88"/>
+    </resources>
+</document>

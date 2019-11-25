@@ -1,0 +1,18 @@
+{
+    "tb":"shopping_cart",
+    "its":[{
+           "vs":1,
+           "cl":[
+                 {"name":"SkuId",  "type":"int64", "level":"Primary"},
+                 {"name":"StyleId", "type":"int64", "index":"Index"},
+                 {"name":"StyleCode", "type":"text"},
+                 {"name":"MerchantId", "type":"int64", "index":"Index"},
+                 {"name":"MerchantCode", "type":"text"},
+                 {"name":"BrandId",  "type":"int64", "index":"Index"},
+                 {"name":"BrandCode",  "type":"text"},
+                 {"name":"SyncOpt", "type":"int64"},
+                 {"name":"LastCreated", "type":"int64"},
+                 {"name":"LastModified", "type":"int64"}
+                 ]
+           }]
+}

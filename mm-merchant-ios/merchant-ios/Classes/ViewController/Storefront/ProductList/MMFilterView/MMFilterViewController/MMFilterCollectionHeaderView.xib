@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="MMFilterCollectionHeaderView" customModule="storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品牌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynl-Oq-yZg">
+                    <rect key="frame" x="14" y="0.0" width="297" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="zOz-us-70z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oq-Mt-cdg">
+                    <rect key="frame" x="325" y="0.0" width="12" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="C4Y-1v-hWE"/>
+                    </constraints>
+                    <state key="normal" image="more_down"/>
+                    <state key="selected" image="more_up"/>
+                    <connections>
+                        <action selector="arrowBtnClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Twj-6K-e1m"/>
+                    </connections>
+                </button>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QC-dj-IVJ">
+                    <rect key="frame" x="321" y="0.0" width="0.0" height="56"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1oq-Mt-cdg" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="367-gt-EnO"/>
+                <constraint firstItem="ynl-Oq-yZg" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="4jJ-1D-sme"/>
+                <constraint firstAttribute="bottom" secondItem="1oq-Mt-cdg" secondAttribute="bottom" id="5xw-pS-x0K"/>
+                <constraint firstItem="2QC-dj-IVJ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="ASx-r4-f83"/>
+                <constraint firstAttribute="bottom" secondItem="ynl-Oq-yZg" secondAttribute="bottom" id="H0i-Sh-SyN"/>
+                <constraint firstAttribute="bottom" secondItem="2QC-dj-IVJ" secondAttribute="bottom" id="Hoc-BV-Di0"/>
+                <constraint firstItem="2QC-dj-IVJ" firstAttribute="leading" secondItem="ynl-Oq-yZg" secondAttribute="trailing" constant="10" id="LyI-aG-HD7"/>
+                <constraint firstItem="ynl-Oq-yZg" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="14" id="Pzv-ne-SEe"/>
+                <constraint firstItem="1oq-Mt-cdg" firstAttribute="leading" secondItem="2QC-dj-IVJ" secondAttribute="trailing" constant="4" id="Ukq-a5-gd7"/>
+                <constraint firstAttribute="trailing" secondItem="1oq-Mt-cdg" secondAttribute="trailing" constant="13" id="yxj-So-a1D"/>
+            </constraints>
+            <connections>
+                <outlet property="arrowBtn" destination="1oq-Mt-cdg" id="asO-pX-aOl"/>
+                <outlet property="contentLb" destination="2QC-dj-IVJ" id="YgK-df-pVQ"/>
+                <outlet property="titleLb" destination="ynl-Oq-yZg" id="Slk-gg-eGp"/>
+            </connections>
+            <point key="canvasLocation" x="19" y="57"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="more_down" width="10" height="6"/>
+        <image name="more_up" width="10" height="6"/>
+    </resources>
+</document>

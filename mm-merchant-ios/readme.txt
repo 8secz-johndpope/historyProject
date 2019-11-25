@@ -1,0 +1,7 @@
+1、客户端埋入简单rsa公钥：
+MTcyNjcwNzZmZDYzYTUwZCsxMDAwMQ==
+
+私钥不放入代码中，主要保密且保存好，用于一些教研是服务端下发正要文件：
+MTcyNjcwNzZmZDYzYTUwZCsxMDVjMWZkOWU5YWNkMDU5
+
+如果需要加签某个数据，请使用BriefRSA.sign方法前面

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items version="1.0">
+    <!-- ========= 以下是与web保持一致的地址，方便扫码直接进入对应的native页面 ========== -->
+    <!--/m-index.html  默认首页 -->
+    <item url="https://m.mymm.com/m-index.html"
+    key=""
+    controller="HomeContainerController"
+    container="MmNavigationController"
+    description="首页"/>
+    <!--#/home/red    风尚圈 ==> 新首页 -->
+    <item url="https://m.mymm.com/red-zone"
+    key=""
+    controller="HomeContainerController"
+    container="MmNavigationController"
+    description="美美"/>
+    <item url="https://m.mymm.com/#/home/red"
+    key=""
+    controller="HomeContainerController"
+    container="MmNavigationController"
+    description="美美"/>
+    <item url="https://m.mymm.com/m-index.html#/home/red"
+    key=""
+    controller="HomeContainerController"
+    container="MmNavigationController"
+    description="美美"/>
+    <!--#/post/list    Post列表-->
+    <item url="https://m.mymm.com/#/post/list"
+    key=""
+    controller="NewsFeedViewController"
+    container="MmNavigationController"
+    description="热帖"/>
+    <item url="https://m.mymm.com/m-index.html#/post/list"
+    key=""
+    controller="NewsFeedViewController"
+    container="MmNavigationController"
+    description="热帖"/>
+    <!--#/signup/    注册-->
+    <item url="https://m.mymm.com/#/signup/{nothing}"
+    key=""
+    controller="MobileSignupViewController"
+    container="MmNavigationController"
+    modal="true"
+    description="注册"/>
+    <item url="https://m.mymm.com/m-index.html#/signup/{nothing}"
+    key=""
+    controller="MobileSignupViewController"
+    container="MmNavigationController"
+    modal="true"
+    description="注册"/>
+    <!--#/login    登录-->
+    <item url="https://m.mymm.com/#/login"
+    key=""
+    controller="InvitationCodeSuccessfulViewController"
+    container="MmNavigationController"
+    modal="true"
+    description="登录"/>
+    <item url="https://m.mymm.com/m-index.html#/login"
+    key=""
+    controller="InvitationCodeSuccessfulViewController"
+    container="MmNavigationController"
+    modal="true"
+    description="登录"/>
+    <!--#/cart    购物车-->
+    <item url="https://m.mymm.com/#/cart"
+    key=""
+    controller="ShoppingCartViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="购物车"/>
+    <item url="https://m.mymm.com/m-index.html#/cart"
+    key=""
+    controller="ShoppingCartViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="购物车"/>
+    <!--#/product/:skuid    商品详情页-->
+    <item url="https://m.mymm.com/#/product/{skuId}"
+    key=""
+    controller="StyleViewController"
+    container="MmNavigationController"
+    description="商品详情"/>
+    <item url="https://m.mymm.com/#/productDetail/{skuId}"
+    key=""
+    controller="StyleDetailViewController"
+    container="MmNavigationController"
+    description="商品详情"/>
+    <item url="https://m.mymm.com/m-index.html#/product/{skuId}"
+    key=""
+    controller="StyleViewController"
+    container="MmNavigationController"
+    description="商品详情"/>
+    <!--#/account    个人中心-->
+    <item url="https://m.mymm.com/#/account"
+    key=""
+    controller="ProfileViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="我的"/>
+    <item url="https://m.mymm.com/m-index.html#/account"
+    key=""
+    controller="ProfileViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="我的"/>
+    <!--#/memberWeal    会员权益-->
+    <item url="https://m.mymm.com/#/memberWeal"
+    key=""
+    controller="MemberCardViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="美美会员"/>
+    <item url="https://m.mymm.com/m-index.html#/memberWeal"
+    key=""
+    controller="MemberCardViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="美美会员"/>
+    <!--#/coupon/list/:merchantid    商家优惠券列表-->
+    <item url="https://m.mymm.com/#/coupon/list/{merchantId}"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="我的优惠券"/>
+    <item url="https://m.mymm.com/m-index.html#/coupon/list/{merchantId}"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="我的优惠券"/>
+    <item url="https://m.mymm.com/#/coupon/center/{merchantId}"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="领取优惠券"/>
+    <item url="https://m.mymm.com/m-index.html#/coupon/center/{merchantId}"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="领取优惠券"/>
+    <!-- #/myCoupon/mm 我的优惠券 -->
+    <item url="https://m.mymm.com/#/myCoupon"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="我的优惠券"/>
+    <item url="https://m.mymm.com/m-index.html#/myCoupon"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="我的优惠券"/>
+    <!--#/category    目录页-->
+    <item url="https://m.mymm.com/#/category"
+    key=""
+    controller="MMCategoryViewController"
+    container="MmNavigationController"
+    description="品类"/>
+    <item url="https://m.mymm.com/m-index.html#/category"
+    key=""
+    controller="MMCategoryViewController"
+    container="MmNavigationController"
+    description="品类"/>
+    <!--#/brandlist    全部品牌-->
+    <item url="https://m.mymm.com/#/brandlist"
+    key=""
+    controller="BrandContainerViewController"
+    container="MmNavigationController"
+    description="品牌"/>
+    <item url="https://m.mymm.com/#/brandlist/inner"
+    key=""
+    controller="BrandListViewController"
+    container="MmNavigationController"
+    description="品牌"/>
+    <item url="https://m.mymm.com/m-index.html#/brandlist"
+    key=""
+    controller="BrandContainerViewController"
+    container="MmNavigationController"
+    description="品牌"/>
+    <item url="https://m.mymm.com/m-index.html#/brandlist/inner"
+    key=""
+    controller="BrandListViewController"
+    container="MmNavigationController"
+    description="品牌"/>
+    <!--#/aboutMM/    关于美美-->
+    <item url="https://m.mymm.com/#/aboutMM/{nothing}"
+    key=""
+    controller="AboutDetailViewController"
+    container="MmNavigationController"
+    description="关于美美"/>
+    <item url="https://m.mymm.com/m-index.html#/aboutMM/{nothing}"
+    key=""
+    controller="AboutDetailViewController"
+    container="MmNavigationController"
+    description="关于美美"/>
+    <!--#/merchant/:merchantKey    MLP-->
+    <item url="https://m.mymm.com/#/merchant/{merchantSubDomain}"
+    key=""
+    controller="MerchantViewController"
+    container="MmNavigationController"
+    description="店铺主页"/>
+    <item url="https://m.mymm.com/m-index.html#/merchant/{merchantSubDomain}"
+    key=""
+    controller="MerchantViewController"
+    container="MmNavigationController"
+    description="店铺主页"/>
+    <item url="https://m.mymm.com/#/merchant/{merchantSubDomain}/{nothing}"
+    key=""
+    controller="MerchantViewController"
+    container="MmNavigationController"
+    description="店铺主页"/>
+    <item url="https://m.mymm.com/m-index.html#/merchant/{merchantSubDomain}/{nothing}"
+    key=""
+    controller="MerchantViewController"
+    container="MmNavigationController"
+    description="店铺主页"/>
+    <!--#/brand/:brandid    BLP-->
+    <item url="https://m.mymm.com/#/brand/{brandId}"
+    key=""
+    controller="BrandViewController"
+    container="MmNavigationController"
+    description="品牌详情"/>
+    <item url="https://m.mymm.com/m-index.html#/brand/{brandId}"
+    key=""
+    controller="BrandViewController"
+    container="MmNavigationController"
+    description="品牌详情"/>
+    <!--#/order/list    订单列表-->
+    <item url="https://m.mymm.com/#/order/list"
+    key=""
+    controller="OrderManagementCollectionViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="我的订单"/>
+    <item url="https://m.mymm.com/m-index.html#/order/list"
+    key=""
+    controller="OrderManagementCollectionViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="我的订单"/>
+    <!--  CMS 默认采用webview渲染  #/page/171_171 or #/page/3002 -->
+    <item url="https://m.mymm.com/#/page/{pageParams}"
+    key=""
+    controller="MMWKWebController"
+    container="MmNavigationController"
+    description=" "/>
+    <item url="https://m.mymm.com/m-index.html#/page/{pageParams}"
+    key=""
+    controller="MMWKWebController"
+    container="MmNavigationController"
+    description=" "/>
+    
+    
+    <!-- ========= 以下 与 以前deeplink 配置一致 ========== -->
+    <!--CONV("/h/", merchantId),-->
+    <item url="https://m.mymm.com/h/{merchantId}"
+    key=""
+    controller="UserChatViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="聊天"/>
+    
+    <!--CONV("/c/", true),-->
+    <item url="https://m.mymm.com/c/{conversationKey}"
+    key=""
+    controller="UserChatViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="聊天"/>
+    
+    <!--SKU("/s/", false), iOS中定义了/sku/{skuId} -->
+    <item url="https://m.mymm.com/s/{skuId}"
+    key=""
+    controller="StyleViewController"
+    container="MmNavigationController"
+    description="商品详情"/>
+    
+    <!-- USER("/u/", true),-->
+    <item url="https://m.mymm.com/u/{userName}"
+    key=""
+    controller="NewProfileViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="个人详情"/>
+    
+    <!--MERCHANT("/m/", false), merchantSubDomain or merchantId -->
+    <item url="https://m.mymm.com/m/{merchantSubDomain}"
+    key=""
+    controller="MerchantViewController"
+    container="MmNavigationController"
+    description="店铺主页"/>
+    
+    <item url="https://m.mymm.com/m/{merchantSubDomain}/about"
+    key=""
+    controller="MerchantDescriptionViewController"
+    container="MmNavigationController"
+    description="店铺说明"/>
+    
+    <!--BRAND("/b/", false), brandSubDomain or brandId-->
+    <item url="https://m.mymm.com/b/{brandSubDomain}"
+    key=""
+    controller="BrandViewController"
+    container="MmNavigationController"
+    description="品牌详情"/>
+    <item url="https://m.mymm.com/b/{brandSubDomain}/about"
+    key=""
+    controller="MerchantDescriptionViewController"
+    container="MmNavigationController"
+    description="品牌介绍"/>
+    
+    <!--POST("/f/", true),-->
+    <item url="https://m.mymm.com/f/{postId}"
+    key=""
+    controller="PostDetailViewController"
+    container="MmNavigationController"
+    description="帖子"/>
+    
+    <!--ORDER_STATUS("/o/", true),-->
+    <item url="https://m.mymm.com/o/{orderKey}"
+    key=""
+    controller="OrderDetailViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="订单详情"/>
+    
+    <!--PLP("/l", false),-->
+    <item url="https://m.mymm.com/l"
+    key=""
+    controller="ProductListViewController"
+    container="MmNavigationController"
+    description="搜索"/>
+    
+    <!--RETURN_STATUS("/r/", true),-->
+    <item url="https://m.mymm.com/r/{returnKey}"
+    key=""
+    controller="OrderDetailViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="售后"/>
+    
+    <!--MAGAZINE("/p/", false),-->
+    <item url="https://m.mymm.com/p/{pageKey}"
+    key=""
+    controller="MagazineContentViewController"
+    container="MmNavigationController"
+    description=" "/>
+    
+    <!--INVITATION("/i/", true),-->
+    <item url="https://m.mymm.com/i/{inviteCode}"
+    key=""
+    controller="HomeContainerController"
+    container="MmNavigationController"
+    description="首页"/>
+    <!--CAMPAIGN_INVITATION("/campaign/iPhone7-BT2", true), //https://mymm.com/campaign/iPhone7-BT2?invite=MYMM9191-->
+     <item url="https://m.mymm.com/campaign/{subPath}"
+     key=""
+     controller="HomeContainerController"
+     container="MmNavigationController"
+     description="首页"/>
+     <!--CAMPAIGN("/cp/", true), 404-->
+    <item url="https://m.mymm.com/cp/incentivereferral"
+    key=""
+    controller="ProfilePopupViewController"
+    container="MmNavigationController"
+    auth="true"
+    modal="true"
+    description="邀请有礼"/>
+    <!--FRIEND_REQUEST("/fr/", true), 404-->
+    <item url="https://m.mymm.com/fr/{userKey}"
+    key=""
+    controller="ContactListViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="好友"/>
+    <!--GENERIC("", false),-->
+    <!--UNDEFINED("", false),-->
+    <item url="https://m.mymm.com"
+    key=""
+    controller="HomeContainerController"
+    container="MmNavigationController"
+    description="首页"/>
+    <!--VIP("/vu/", true), 404 -->
+    <item url="https://m.mymm.com/vu/{userKey}"
+    key=""
+    controller="MemberCardViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="VIP"/>
+    
+    <!-- 下面四个有疑问，参数不知道是什么 -->
+    <!--NEWBIE_COUPON("/nc/", true), 404-->
+    <!--REFERRER_COUPON("/rr/", true), 404-->
+    <!--REFEREE_COUPON("/re/", true), 404-->
+    <!--REFEREE_NEWBIE_COUPON("/rn/", true), 404-->
+    <!--NORMAL_COUPON("/rm/", true), 404-->
+    <item url="https://m.mymm.com/nc/{conversationKey}"
+    key=""
+    controller="UserChatViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="美美"/>
+    <item url="https://m.mymm.com/rr/{nothing}"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="我的优惠券"/>
+    <item url="https://m.mymm.com/re/{nothing}"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="我的优惠券"/>
+    <item url="https://m.mymm.com/rn/{nothing}"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="我的优惠券"/>
+    <item url="https://m.mymm.com/rm/{nothing}"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="我的优惠券"/>
+    <!--DISCOVER_CATEGORIES("/discover-category", false),  iOS: dk/discover-category -->
+    <item url="https://m.mymm.com/dk/discover-category"
+    key=""
+    controller="MMCategoryViewController"
+    container="MmNavigationController"
+    description="品牌分类"/>
+    <!--ALL_CURATORS("/curator-list", false), iOS: dk/curator-list -->
+    <item url="https://m.mymm.com/dk/curator-list"
+    key=""
+    controller="CuratorCollectionViewController"
+    container="MmNavigationController"
+    description="所有美范"/>
+    <!--DISCOVER_BRAND("/discover-brand", false),品牌、品类 iOS: dk/discover-brand-->
+    <item url="https://m.mymm.com/dk/discover-brand"
+    key=""
+    controller="DiscoverBrandController"
+    container="MmNavigationController"
+    description="品牌"/>
+    <!--ALL_BRANDS_LIST("/brand-list", false), iOS: dk/brand-list -->
+    <item url="https://m.mymm.com/dk/brand-list"
+    key=""
+    controller="BrandContainerViewController"
+    container="MmNavigationController"
+    description="品牌"/>
+    <item url="https://m.mymm.com/zb/{pageId}/{chnlId}"
+    key=""
+    controller="BrandContainerViewController"
+    container="MmNavigationController"
+    description="品牌列表"/>
+    <item url="https://m.mymm.com/zb/{pageId}/{chnlId}#/inner"
+    key=""
+    controller="CMSPageViewController"
+    container="MmNavigationController"
+    description="品牌列表"/>
+    <item url="https://m.mymm.com/dk/brand-list#/inner"
+    key=""
+    controller="BrandListViewController"
+    container="MmNavigationController"
+    description="品牌列表"/>
+    <!--  /x/recommendpopup  -->
+    <item url="https://m.mymm.com/x/recommendpopup"
+    key=""
+    controller="SingleRecommendViewController"
+    container="MmNavigationController"
+    description="个性化推荐"/>
+    <!--  SYTE_PRODUCT_LIST,syte PLP  -->
+    <item url="https://m.mymm.com/lx/{skuid}"
+    key=""
+    controller="SyteProductListViewController"
+    container="MmNavigationController"
+    description="搜索"/>
+    <!--ALL_MERCHANT_LIST("/merchant-list", false), iOS: dk/merchant-list -->
+    <item url="https://m.mymm.com/dk/merchant-list"
+    key=""
+    controller="MerchantGridViewController"
+    container="MmNavigationController"
+    description="全部店铺"/>
+    <!--COUPON_MASTER_PAGE("/coupon-masterclaim", true), iOS: dk/coupon-masterclaim  另外参数entity=mymm or entity=merchant or entity=merchant&merchantid=XXXX  -->
+    <item url="https://m.mymm.com/dk/coupon-masterclaim"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="优惠券"/>
+    <item url="https://m.mymm.com/dk/coupon-masterclaim/{entity}"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="优惠券"/>
+    <!--HASH_TAG("/dk/tag/", false), tagName-->
+    <item url="https://m.mymm.com/dk/tag/{tagName}"
+    key=""
+    controller="HashTagPostViewController"
+    container="MmNavigationController"
+    description="相关帖子"/>
+    <!--SOCIAL_LIKE("/dk/pl/", true), 点赞-->
+    <item url="https://m.mymm.com/dk/pl/{nothing}"
+    key=""
+    controller="SocialNotificationViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="点赞通知"/>
+    <!--SOCIAL_COMMENT("/dk/pc/", true), 评论-->
+    <item url="https://m.mymm.com/dk/pc/{nothing}"
+    key=""
+    controller="SocialNotificationViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="评论通知"/>
+    <!--SOCIAL_FOLLOWER("/dk/fl/", true), 关注-->
+    <item url="https://m.mymm.com/dk/fl/{nothing}"
+    key=""
+    controller="SocialNotificationViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="关注通知"/>
+    <!--POSTING("/dk/posting", true); 发帖 客户端实现缺陷，无法直接调起来 -->
+    <item url="https://m.mymm.com/dk/posting"
+    key=""
+    controller="CreatePostSelectImageViewController"
+    container="MmNavigationController"
+    auth="true"
+    modal="true"
+    description="发帖"/>
+    <!--/z/{pageId}  CMS页面 -->
+    <item url="https://m.mymm.com/z/{pageId}"
+    key=""
+    controller="CMSPageViewController"
+    container="MmNavigationController"
+    description=" "/>
+    <item url="https://m.demo.com/z/{pageId}/{chnlId}"
+    key=""
+    controller="CMSPageViewController"
+    container="MmNavigationController"
+    description=" "/>
+    
+    
+    <!-- ========= app 特有的一些页面 router: 尽量同步web端的同学 ========== -->
+    <item url="https://m.mymm.com/coupon/container"
+    key=""
+    controller="CouponContainerViewController"
+    container="MmNavigationController"
+    auth="false"
+    description="优惠券"/>
+    
+    <item url="https://m.mymm.com/menu"
+    key=""
+    controller="SlideMenuViewController"
+    container=""
+    auth="true"
+    description="主菜单"/>
+    
+    <item url="https://m.mymm.com/user/qrcode/scan"
+    key=""
+    controller="MMScanQRCodeController"
+    container="MmNavigationController"
+    auth="true"
+    description="扫一扫"/>
+    
+    <item url="https://m.mymm.com/user/qrcode"
+    key=""
+    controller="MyQRCodeViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="二维码"/>
+    
+    <item url="https://m.mymm.com/setting"
+    key=""
+    controller="AccountSettingViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="設置"/>
+    
+    <item url="https://m.mymm.com/imLanding"
+    key=""
+    controller="IMViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="聊聊"/>
+    
+    <item url="https://m.mymm.com/socialNotification"
+    key=""
+    controller="NotificationCenterViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="系统消息"/>
+    
+    
+    <item url="https://m.mymm.com/user/collection"
+    key=""
+    controller="MyCollectionViewController"
+    container="MmNavigationController"
+    auth="true"
+    description="我的收藏"/>
+</items>

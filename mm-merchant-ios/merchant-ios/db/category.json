@@ -1,0 +1,26 @@
+{
+    "tb":"category",
+    "its":[{
+           "vs":1,
+           "cl":[
+                 {"name":"CategoryId",  "type":"int64",   "level":"Primary"},
+                 {"name":"CategoryCode", "type":"text", "index":"Index"},
+                 {"name":"ParentCategoryId",  "type":"int64"},
+                 {"name":"CategoryName", "type":"text"},
+                 {"name":"CategoryNameInvariant", "type":"text"},
+                 {"name":"CategoryImage", "type":"text"},
+                 {"name":"FeaturedImage", "type":"text"},
+                 {"name":"SizeGridImage", "type":"text"},
+                 {"name":"SizeGridImageInvariant", "type":"text"},
+                 {"name":"Priority",  "type":"int"},
+                 {"name":"StatusId",  "type":"int"},
+                 {"name":"IsMale",  "type":"bool"},
+                 {"name":"IsFemale",  "type":"bool"},
+                 {"name":"IsMerchCanSelect",  "type":"bool"},
+                 {"name":"CategoryNameOrigin", "type":"text"},
+                 {"name":"DefaultCommissionRate", "type":"int"},
+                 {"name":"Level", "type":"int"},
+                 {"name":"IsShow", "type":"int"}
+                 ]
+           }]
+}

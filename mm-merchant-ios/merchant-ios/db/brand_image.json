@@ -1,0 +1,13 @@
+{
+    "tb":"brand_image",
+    "its":[{
+           "vs":1,
+           "cl":[
+                 {"name":"BrandImageId",  "type":"int64",   "level":"Primary"},
+                 {"name":"BrandId",  "type":"int64",   "index":"Index"},
+                 {"name":"ImageTypeCode", "type":"text", "index":"Index"},
+                 {"name":"BrandImage", "type":"text", "index":"Index"},
+                 {"name":"Position",  "type":"int"}
+                 ]
+           }]
+}

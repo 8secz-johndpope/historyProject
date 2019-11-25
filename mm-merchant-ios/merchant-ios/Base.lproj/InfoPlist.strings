@@ -1,0 +1,19 @@
+/* 
+  InfoPlist.strings
+  merchant-ios
+
+  Created by Alan YU on 7/10/2016.
+  Copyright © 2016 WWE & CO. All rights reserved.
+*/
+
+NSPhotoLibraryUsageDescription = "Your photo will be displayed in your personal profile, newsfeed posting and messaging";
+
+NSMicrophoneUsageDescription = "Your Microphone will be used for recording audio message or conducting audio chat";
+
+NSCameraUsageDescription = "Your camera will be used to take photo for uploading in your personal profile, feed posting and messaging";
+
+NSLocationUsageDescription = "Your location will be used to locate nearby stores";
+
+NSLocationAlwaysUsageDescription = "Your location will be used to locate nearby stores";
+
+NSLocationWhenInUseUsageDescription = "Your location will be used to locate nearby stores";

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zg0-qV-Gwh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Change Mobile View Controller-->
+        <scene sceneID="g1T-Lf-GoK">
+            <objects>
+                <viewController storyboardIdentifier="ChangeMobileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5XL-4Q-V7x" customClass="ChangeMobileViewController" customModule="merchant_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cUH-dJ-h8v"/>
+                        <viewControllerLayoutGuide type="bottom" id="aR3-46-8hG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8qO-Mf-b6G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="6WL-LR-ciA">
+                                <rect key="frame" x="281" y="104" width="38" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="Xuj-R1-WBW"/>
+                                    <constraint firstAttribute="height" constant="35" id="wiX-mZ-iCU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E44-r0-ff4">
+                                <rect key="frame" x="20" y="185" width="560" height="29"/>
+                                <animations/>
+                                <string key="text">Please enter activation code from SMS
+and create your password</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Activation Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KNm-xf-a9R">
+                                <rect key="frame" x="20" y="281" width="560" height="46"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="E8j-sg-YYN"/>
+                                    <constraint firstAttribute="height" constant="46" id="Fkv-nr-Sxl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="ZMd-pR-4XC"/>
+                                    <constraint firstAttribute="width" constant="355" id="mBT-S2-LaO"/>
+                                    <constraint firstAttribute="width" secondItem="KNm-xf-a9R" secondAttribute="height" multiplier="19:3" id="qx3-7e-o0H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="E8j-sg-YYN"/>
+                                        <exclude reference="ZMd-pR-4XC"/>
+                                        <exclude reference="mBT-S2-LaO"/>
+                                        <exclude reference="qx3-7e-o0H"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVJ-Fs-slb">
+                                <rect key="frame" x="20" y="352" width="560" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.1333333333" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="19v-UH-c31"/>
+                                    <constraint firstAttribute="height" constant="40" id="RQZ-jZ-JXx"/>
+                                    <constraint firstAttribute="width" secondItem="bVJ-Fs-slb" secondAttribute="height" multiplier="30:5" id="VHB-NZ-4cM"/>
+                                    <constraint firstAttribute="height" constant="30" id="bYo-Bb-6dW"/>
+                                    <constraint firstAttribute="width" constant="355" id="d4I-tm-vT7"/>
+                                    <constraint firstAttribute="height" constant="32" id="sRu-Zx-aS8"/>
+                                </constraints>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="19v-UH-c31"/>
+                                        <exclude reference="VHB-NZ-4cM"/>
+                                        <exclude reference="bYo-Bb-6dW"/>
+                                        <exclude reference="d4I-tm-vT7"/>
+                                        <exclude reference="sRu-Zx-aS8"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="reactivateClicked:" destination="5XL-4Q-V7x" eventType="touchUpInside" id="kSC-at-udk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email/ Mobile Number" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="HFk-Mf-01n">
+                                <rect key="frame" x="20" y="235" width="560" height="46"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" hint=""/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="4qD-yE-S1b"/>
+                                    <constraint firstAttribute="width" constant="355" id="gYf-YF-kiY"/>
+                                    <constraint firstAttribute="height" constant="46" id="hqV-n7-YDa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4qD-yE-S1b"/>
+                                        <exclude reference="gYf-YF-kiY"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYY-jm-QYl">
+                                <rect key="frame" x="20" y="412" width="560" height="32"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Resend Activation Code">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resendClicked:" destination="5XL-4Q-V7x" eventType="touchUpInside" id="2qt-KU-en4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="JYY-jm-QYl" secondAttribute="trailing" id="0DF-I4-87U"/>
+                            <constraint firstItem="KNm-xf-a9R" firstAttribute="leading" secondItem="8qO-Mf-b6G" secondAttribute="leadingMargin" id="1RV-Yq-vRm"/>
+                            <constraint firstItem="E44-r0-ff4" firstAttribute="top" secondItem="6WL-LR-ciA" secondAttribute="bottom" constant="46" id="B1f-5g-CeD"/>
+                            <constraint firstItem="E44-r0-ff4" firstAttribute="top" secondItem="cUH-dJ-h8v" secondAttribute="bottom" constant="121" id="Drr-dW-zzJ"/>
+                            <constraint firstItem="bVJ-Fs-slb" firstAttribute="top" secondItem="KNm-xf-a9R" secondAttribute="bottom" constant="25" id="GyB-bY-PfB"/>
+                            <constraint firstItem="E44-r0-ff4" firstAttribute="leading" secondItem="8qO-Mf-b6G" secondAttribute="leadingMargin" id="Ikd-V3-y1N"/>
+                            <constraint firstItem="6WL-LR-ciA" firstAttribute="centerX" secondItem="8qO-Mf-b6G" secondAttribute="centerX" id="NVt-Ol-QE4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HFk-Mf-01n" secondAttribute="trailing" id="OeB-T9-yaF"/>
+                            <constraint firstItem="JYY-jm-QYl" firstAttribute="top" secondItem="bVJ-Fs-slb" secondAttribute="bottom" constant="20" id="QZn-GK-6tp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bVJ-Fs-slb" secondAttribute="trailing" id="UcQ-eQ-HuW"/>
+                            <constraint firstItem="HFk-Mf-01n" firstAttribute="top" secondItem="E44-r0-ff4" secondAttribute="bottom" constant="21" id="Ze3-UA-HP0"/>
+                            <constraint firstItem="bVJ-Fs-slb" firstAttribute="leading" secondItem="8qO-Mf-b6G" secondAttribute="leadingMargin" id="cJ5-TK-fn6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KNm-xf-a9R" secondAttribute="trailing" id="kBS-jw-XUF"/>
+                            <constraint firstItem="6WL-LR-ciA" firstAttribute="top" secondItem="cUH-dJ-h8v" secondAttribute="bottom" constant="40" id="rX4-TM-zCQ"/>
+                            <constraint firstItem="JYY-jm-QYl" firstAttribute="leading" secondItem="8qO-Mf-b6G" secondAttribute="leadingMargin" id="uk9-hQ-nMF"/>
+                            <constraint firstItem="HFk-Mf-01n" firstAttribute="leading" secondItem="8qO-Mf-b6G" secondAttribute="leadingMargin" id="w41-5v-Kp8"/>
+                            <constraint firstItem="KNm-xf-a9R" firstAttribute="top" secondItem="HFk-Mf-01n" secondAttribute="bottom" id="xEf-8O-Qjt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E44-r0-ff4" secondAttribute="trailing" id="xJn-9T-7Od"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sLo-Do-o6k"/>
+                    <connections>
+                        <outlet property="activationCodeTextField" destination="KNm-xf-a9R" id="F0s-f0-FzJ"/>
+                        <outlet property="changeMobileLabel" destination="E44-r0-ff4" id="jss-75-dgf"/>
+                        <outlet property="mobileTextField" destination="HFk-Mf-01n" id="GTe-1p-xfe"/>
+                        <outlet property="reactivateButton" destination="bVJ-Fs-slb" id="OQu-2B-Tyi"/>
+                        <outlet property="resendButton" destination="JYY-jm-QYl" id="FRk-dX-699"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FaA-yo-k8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="174"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0B4-kA-vTV">
+            <objects>
+                <navigationController storyboardIdentifier="ChangeMobileNav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zg0-qV-Gwh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0an-20-TSk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5XL-4Q-V7x" kind="relationship" relationship="rootViewController" id="ZVU-GM-0cr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1E-GU-MzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221" y="174"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="26" height="24"/>
+    </resources>
+</document>

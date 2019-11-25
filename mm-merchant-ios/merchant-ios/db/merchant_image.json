@@ -1,0 +1,16 @@
+{
+    "tb":"merchant_image",
+    "its":[{
+           "vs":1,
+           "cl":[
+                 {"name":"MerchantId",  "type":"int64",   "level":"Primary"},
+                 {"name":"MerchantImageId",  "type":"int64",  "index":"Index"},
+                 {"name":"ImageTypeCode", "type":"text", "index":"Index"},
+                 {"name":"MerchantImage", "type":"text", "index":"Index"},
+                 
+                 {"name":"Position",  "type":"int"},
+                 {"name":"Link", "type":"text"}
+                 ]
+           }
+           ]
+}
